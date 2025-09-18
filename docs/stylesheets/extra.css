@@ -1,0 +1,65 @@
+:root {
+  --md-primary-fg-color: #c8a2cb; /* 보라색 */
+  --md-primary-fg-color--light: #d8b2db;
+  --md-primary-fg-color--dark: #a578ab;
+}
+
+.purple1 {color: #c8a2cb}
+
+/* 파일명 강조 (파란색) */
+.file {
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* 중요 (노란색 강조) */
+.warn {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+/* 추가 설명/참고 (회색) */
+.ref {
+  color: #7f8c8d;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* 섹션 제목 색상 (보라색) */
+.title {
+  color: #c8a2cb;
+  font-weight: bold;
+}
+
+.caution {
+  color: #aa0000;
+  font-weight: bold;
+}
+
+.c0 {color: #000000;}
+.c1 {color: #0000aa;}
+.c2 {color: #00aa00;}
+.c3 {color: #00aaaa;}
+.c4 {color: #aa0000;}
+.c5 {color: #aa00aa;}
+.c6 {color: #ffaa00;}
+.c7 {color: #aaaaaa;}
+.c8 {color: #555555;}
+.c9 {color: #5555ff;}
+.ca {color: #55ff55;}
+.cb {color: #55ffff;}
+.cc {color: #ff5555;}
+.cd {color: #ff55ff;}
+.ce {color: #ffff55;}
+.cf {color: #ffffff;}
+
+/*.codebox {
+  background: #1e1e1e; /* vb 코드블럭 같은 어두운 회색 
+  color: #fff;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 6px;
+  line-height: 1.5;
+  white-space: pre; /* 들여쓰기 유지 
+}*/

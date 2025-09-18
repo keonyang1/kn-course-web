@@ -1,0 +1,31 @@
+site_name: 커냥의 강좌 사이트
+theme:
+  name: material
+  palette:
+    - scheme: slate        # 다크 모드
+      primary: custom      # 기본 색상 사용자 정의
+      accent: deep purple
+
+nav:
+  - 홈: index.md
+  - 스크립트 강좌:
+    - 준비 단계:
+      - 싱글 서버 만들기: skript/서버_만들기.md
+      - 스크립트 적용하기: skript/스크립트_적용하기.md
+    - 스크립트 만들기:
+      - 기초: skript/기초.md
+      - 참고: skript/참고.md
+      - 이벤트: skript/이벤트.md
+      - 글자 띄우기: empty
+      - 커스텀 명령어: empty
+      - 자동 완성: empty
+    - 배포:
+      - NumToMoneyUnit: skript/배포/NumToMoneyUnit.md
+      - default-item(iron): skript/배포/default-item(iron).md
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/img.css
+
+extra_javascript:
+  - assets/copy-code.js
