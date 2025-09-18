@@ -16,9 +16,9 @@ nav:
       - 기초: skript/기초.md
       - 참고: skript/참고.md
       - 이벤트: skript/이벤트.md
-      - 글자 띄우기: empty
-      - 커스텀 명령어: empty
-      - 자동 완성: empty
+      - 글자 띄우기: skript/글자_띄우기.md
+      - 커스텀 명령어: skript/커스텀_명령어.md
+      - 자동 완성: skript/자동_완성.md
     - 배포:
       - NumToMoneyUnit: skript/배포/NumToMoneyUnit.md
       - default-item(iron): skript/배포/default-item(iron).md
