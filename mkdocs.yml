@@ -22,6 +22,10 @@ nav:
     - 배포:
       - NumToMoneyUnit: skript/배포/NumToMoneyUnit.md
       - default-item(iron): skript/배포/default-item(iron).md
+      - bag: skript/배포/bag.md
+      - autoOP: skript/배포/autoOP.md
+      - nightvision: skript/배포/nightvision.md
+      - motd: skript/배포/motd.md
 
 extra_css:
   - stylesheets/extra.css
