@@ -28,4 +28,4 @@ extra_css:
   - stylesheets/img.css
 
 extra_javascript:
-  - assets/copy-code.js
+  - assets/js/copy-code.js
