@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -484,6 +489,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    글자 띄우기
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -496,6 +516,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      글자 띄우는 방법
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      채팅
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      타이틀, 서브타이틀 그리고 액션바
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -764,6 +830,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      글자 띄우는 방법
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      채팅
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      타이틀, 서브타이틀 그리고 액션바
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -779,9 +882,55 @@
 
 
 
-  <h1>글자 띄우기</h1>
-
-
+<h1 id="_1"><strong>글자 띄우기</strong></h1>
+<h2 id="_2"><span class="title">글자 띄우는 방법</span></h2>
+<p>마인크래프트에서 글자를 띄우는 방법은 다양하다.
+기본적으로 <strong>채팅</strong>, <strong>타이틀</strong>, <strong>서브타이틀</strong>, <strong>액션바</strong> 등이 있다.</p>
+<hr />
+<h2 id="_3"><span class="title">채팅</span></h2>
+<p>채팅으로 글자를 띄우는 방법도 2가지가 있다.</p>
+<p>첫 번째는 특정 플레이어에게만 보이는 채팅이다.</p>
+<pre><code class="language-vb">send &quot;내용&quot; to 대상 또는 message &quot;내용&quot; to 대상
+</code></pre>
+<p>으로 채팅을 보낼 수 있다.</p>
+<p>ex)</p>
+<pre><code class="language-vb">send &quot;안녕하세요&quot;
+</code></pre>
+<pre><code class="language-vb">send {var} to player
+</code></pre>
+<pre><code class="language-vb">message &quot;%{var}%내용&quot; to &quot;keo_Nyang&quot; parsed as player
+</code></pre>
+<p>두 번째는 모든 플레이어에게 보이는 채팅이다.</p>
+<pre><code class="language-vb">send &quot;내용&quot; to all players 또는 message &quot;내용&quot; to all players
+</code></pre>
+<p>를 사용해도 상관 없지만 이번에는</p>
+<pre><code class="language-vb">broadcast &quot;내용&quot;
+</code></pre>
+<p>이런 구문을 사용할거다.</p>
+<p>ex)</p>
+<pre><code class="language-vb">broadcast &quot;안녕하세요&quot;
+</code></pre>
+<hr />
+<h2 id="_4"><span class="title">타이틀, 서브타이틀 그리고 액션바</span></h2>
+<p>타이틀, 서브타이틀, 액션바는 아까 사용했던 <span class="c9">send</span>를 사용할 것이다.</p>
+<pre><code class="language-vb">send title &quot;내용&quot; to 대상
+send subtitle &quot;내용&quot; to 대상
+send action bar &quot;내용&quot; to 대상
+</code></pre>
+<p>이렇게 사용한다.
+ex)</p>
+<pre><code class="language-vb">send title &quot;안녕하세요&quot;
+</code></pre>
+<pre><code class="language-vb">send title &quot;&quot;
+</code></pre>
+<pre><code class="language-vb">send subtitle &quot;안녕하세요&quot;
+</code></pre>
+<pre><code class="language-vb">send action bar {var} to player
+</code></pre>
+<pre><code class="language-vb">every tick:
+    loop all players:
+        send action bar now to loop-player
+</code></pre>
 
 
 
